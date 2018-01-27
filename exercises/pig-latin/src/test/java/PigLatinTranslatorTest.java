@@ -23,12 +23,17 @@ public class PigLatinTranslatorTest {
                 {"object", "objectay"},
                 {"under", "underay"},
 
+                // Ay is added to words that start with vowel and followed by qu
+                {"equal", "equalay"},
+
                 // First letter and ay are moved to the end of words that start with consonants
                 {"pig", "igpay"},
                 {"koala", "oalakay"},
-                {"yellow", "ellowyay"},
                 {"xenon", "enonxay"},
 
+                // Word beginning with q without a following u
+                {"qat", "atqay"},
+            
                 // Ch is treated like a single consonant
                 {"chair", "airchay"},
 
